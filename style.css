@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
+
+/*estilos generales */
+
+.body-1{
+    margin: 0;
+    background-image: url(./assets/danist-soh-8Gg2Ne_uTcM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 9px 5px -6px rgba(0,148,35,1);
+}
+
+.navbar img{
+    height: 98px;
+    width: 140px;
+}
+
+.container-links{
+    display: flex;
+    align-items: center;
+}
+
+.hover-3 {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #00be5f; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-3:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+.links{
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-right: 20px;
+    gap: 12px;
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container-general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.container-texto{
+    width: 65%;
+    height: 30%;
+    align-self: center;
+    text-align: center;
+}
+
+.texto{
+    margin-top: 320px;
+    text-shadow: 3px 4px 4px black;
+    font-family: 'Lora', serif;
+    color: white;
+    backdrop-filter: contrast(0.5);
+    font-size: 32px;
+}
+
+.button:hover{
+    font-family: 'oswald', sans-serif;
+    background-color: #000000;
+    color: white;
+    font-size: 24px;
+    border: 3px ridge grey;
+    transform: scale(1.1);
+    transition: 0.5s ease-out;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    font-family: 'oswald', sans-serif;
+    margin-top: 0px;
+    background-color: azure;
+    color: #000;
+    font-size: 24px;
+    height: 50px;
+    width: 160px;
+    border-radius: 8px; 
+    border: 4px ridge #00be5f;
+    box-shadow: 0px 2px 10px;
+}
+
+/* Estilos para nosotros.html */ 
+
+.body-2{
+    width: 100vw;
+    display: inline-block;
+    margin: 0;
+    background-image: url(./assets/pexels-tom-fisk-3448246.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-texto2{
+    width: 100vw; 
+    margin-top: 150px;
+}
+
+.titulo2{
+    text-align: center;
+    justify-self: center;
+    color: white;
+    text-shadow: 3px 4px 4px black;
+    font-size: 65px;
+}
+
+.resaltar{
+    font-size: 80px !important;
+    color: #0e9b38
+}
+
+.parrafo-us-container{
+    height: 320px;
+    width: 100vw;
+}
+
+.parrafo{
+    margin-inline: 150px;
+    margin-top: 70px;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    text-shadow: 3px 4px 4px black;
+    backdrop-filter: blur(1px);
+}
+
+/* Estilos para servicios.html */ 
+
+html, body{ margin: 0;}
+
+.container-general-2{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/pexels-tom-fisk-3448250.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-grid{
+    margin-top: 80px;
+    display: grid;
+    gap: 22px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    height: 70vh;
+    width: 94vw;
+    background-color: rgba(255, 255, 255, 0.39);
+    box-sizing: border-box;
+    padding: 20px;
+    grid-template-areas: 
+    "cuadro1 cuadro2 cuadro3 cuadro4"
+    "cuadro5 cuadro6 cuadro7 cuadro8";
+}
+
+footer, .parrafo-footer, .anchor-footer{
+    font-size: 10px;
+    font-family: 'oswald', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-top: 2px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 52px;
+    width: 100vw;
+    text-align: center;
+    border-top: 2px nudge white;
+    background-color: black;
+}
+
+#uno:hover img{
+    display: none;    
+}
+
+    #uno:hover:before{
+        content: 'DISEÑO, CONSTRUCCIÓN DE ESCENARIOS DEPORTIVOS Y RECREACIÓN. '
+        ' Canchas de futbol: (Grama sintética, grama natural), '
+        ' Parques infantiles, '
+        ' Canchas múltiples: (Concreto, asfalto),'
+        ' Canchas de tenis: (Polvo de ladrillo, césped natural, césped sintético, concreto),'
+        ' Polideportivos,'
+        ' Pistas atléticas,'
+        ' Canchas de hockey.';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+#dos:hover img{
+    display: none;   
+}
+
+    #dos:hover:before {
+        content: 'DISEÑO Y CONSTRUCCIÓN'
+        ' DE ACUEDUCTOS Y'
+        ' ALCANTARILLADOS.';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+#tres:hover img{
+    display: none;
+}
+
+    #tres:hover:before {
+        content: 'DISEÑO Y CONSTRUCCIÓN'
+        ' DE VÍAS';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#cuatro:hover img{
+    display: none;
+}
+
+    #cuatro:hover:before {
+        content: 'GERENCIA'
+        ' DE PROYECTOS';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#cinco:hover img{
+    display: none;
+}
+
+    #cinco:hover:before {
+        content: 'INTERVENTORÍA Y SUPERVISÍON'
+        ' DE OBRAS CIVILES';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#seis:hover img{
+    display: none;
+}
+
+    #seis:hover:before {
+        content: 'ASESORÍA INMOBILIARIA:'
+        ' Estudio de títulos,'
+        ' Avalúos catastrales,'
+        ' Divisiones materiales,'
+        ' Reglamento de propiedad horizontal,'
+        ' Constitución de urbanismo'
+        ' Pertenencias.';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+    }
+
+#siete:hover img{
+    display: none;
+}
+
+    #siete:hover:before {
+        content: 'REMODELACIONES Y '
+        ' ADECUACIONES LOCATIVAS';
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+#ocho:hover img{
+    display: none;
+}
+
+    #ocho:hover:before {
+        content: '';
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+
+.cuadros {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    max-width: 400px;
+    position: relative;
+    padding: 1rem;
+    background-color: #fff;
+    cursor: pointer; }
+
+  .cuadros:before {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #33b122b7;
+        transform-origin: 0 bottom 0;
+        transform: scaleY(0);
+        transition: 0.4s ease-out; }
+    
+  .cuadros:hover:before {
+    content: '';
+    transform: scaleY(1); }
+
+.anything {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.333;
+  transition: 0.4s ease-out; }
+
+  .imagen-numero-cuadro{
+    height: 50px;
+    width: 50px;
+  }
+
+  .imagen-numero-cuadro-8{
+    height: 190px;
+    width: 280px;
+  }
+
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+
+/* estilos contacto */
+
+
+.body-contacto{
+    display: grid;
+}
+
+.container-form{
+    margin-top: 102px;
+    justify-self: center;
+    position: absolute;
+    height: 80%;
+    width: 60%;
+    background-color: #ffffff41;
+    box-sizing: border-box;
+    padding-inline: 40px;
+}
+
+.formulario{
+    display: grid;
+}
+
+textarea{
+    justify-self: center;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 700px;
+    max-width: 700px;
+    font-size: 16px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.9s ease-in-out, box-shadow 0.9s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  .form-group{
+    margin-block: 10px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    justify-self: center;
+  }
+
+
+.formulario-titulo{
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario-subtitulo{
+    text-align: center;
+    margin: 0px 0px 0px 6px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    margin-bottom: 2px;
+    font-size: 19px;
+}
+  
+.boton-enviar{
+    margin-top: 20px;
+    height: 35px;
+    width: 100px;
+    justify-self: center;
+    font-family: 'Poppins, sans-serif';
+    font-size: 20px;
+    background-color: azure;
+    color: #000;
+    border-radius: 8px; 
+    border: 3px ridge #00be5f;
+    box-shadow: 0px 2px 10px;
+}
